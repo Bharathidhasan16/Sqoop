@@ -1,0 +1,11 @@
+sqoop --options-file /home/hduser/retailorders/empofficeoption --password-file
+/user/hduser/retailorders/root.password \
+-table employees --hive-import -hive-table retail.employees -m 2 
+
+//empofficeoption file contains
+
+import 
+--connect 
+jdbc:mysql://localhost/empoffice 
+--username 
+root
